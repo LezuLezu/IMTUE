@@ -1,0 +1,102 @@
+/* Base styling for the project */
+body {
+    background-color: #EFF2F6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+p {
+    color: black;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #C1EADA, #CED1E5);
+    color: #0D73CF;
+    text-align: center;
+    height: 3rem;
+}
+
+.merriweather-sans-h1 {
+    font-family: "Merriweather Sans", "Merriweather Sans Fallback";
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 30px;
+    color: #0D73CF;
+}
+
+h2 {
+    font-size: 24px;
+    margin-left: 0.5rem;
+}
+
+header h1, header h2 {
+    align-items: center;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 4.5rem;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    position: relative; 
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #3D4852;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Navigation animation */
+nav li::before, nav li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #3D4852;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; 
+}
+
+nav li::before {
+    top: 0;
+    transform: translateY(-200%);
+}
+
+nav li::after {
+    bottom: 0;
+    transform: translateY(200%);
+}
+
+nav li:hover::before, nav li:hover::after, nav li.active::before, nav li.active::after {
+    transform: translateY(0);
+    opacity: 1; 
+}
