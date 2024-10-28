@@ -1,0 +1,155 @@
+
+                <!-- Tussenvoegsel -->
+            <label for="infix" tabindex="16">Tussenvoegsel</label>
+            <input type="text" maxlength="10" aria-roledescription="Input veld" id="infix" name="infix" required aria-required="true" tabindex="17" placeholder="Invoerveld tussenvoegsel" aria-placeholder="Invoerveld tussenvoegsel">
+            <!-- Achternaam -->
+            <label for="lastname" tabindex="18">Achternaam</label>
+            <input type="text" name="lastname" aria-roledescription="Input veld" id="lastname" maxlength="40" required aria-required="true" tabindex="19" placeholder="Invoerveld achternaam" aria-placeholder="Invoerveld achternaam">
+            <!-- Geslacht -->
+            <label for="sex" tabindex="20">Geslacht</label>
+            <input type="text" name="sex" id="sex" maxlength="10" aria-roledescription="Input veld" required aria-required="true" tabindex="21" placeholder="Invoerveld geslacht ten behoeve van aanhef" aria-placeholder="Invoerveld geslacht ten behoeve van aanhef">
+
+
+        <!-- Adres gegevens -->
+            <h2 class="formHeader" tabindex="22">Adresgegevens</h2>
+            <!-- Straat -->
+            <label for="street" tabindex="23">Straat</label>
+            <input type="text" name="street" id="street" maxlength="40" required aria-required="true" aria-roledescription="Input veld" tabindex="24" placeholder="Invoerveld straatnaam" aria-placeholder="Invoerveld straatnaam">
+            <!-- Huisnummer -->
+            <label for="housenumber" tabindex="25">Huisnummer</label>
+            <input type="text" name="housenumber" id="housenumber" maxlength="10" required aria-required="true" aria-roledescription="Input veld" tabindex="26" placeholder="Invoerveld huisnummer" aria-placeholder="Invoerveld huisnummer">
+            <!-- Postcode -->
+            <label for="zipcode" tabindex="27">Postcode</label>
+            <input type="text" name="zipcode" id="zipcode" maxlength="8" required aria-required="true" aria-roledescription="Input veld" tabindex="28" placeholder="Invoerveld postcode" aria-placeholder="Invoerveld postcode">
+            <!-- Woonplaats -->
+            <label for="city" tabindex="29">Woonplaats</label>
+            <input type="text" name="city" id="city" maxlength="40" required aria-required="true" aria-roledescription="Input veld" tabindex="30" placeholder="Invoerveld woonplaats" aria-placeholder="Invoerveld woonplaats">
+        
+            <!-- Contactgegevens -->
+            <h2 class="formHeader" tabindex="31">Contactgegevens</h2>
+            <!-- Telefoonnummer -->
+            <label for="phone" tabindex="32">Telefoonnummer</label>
+            <input type="tel" name="phone" id="phone" maxlength="12" required aria-required="true" aria-roledescription="Input veld" tabindex="33" placeholder="Invoerveld telefoonnummer" aria-placeholder="Invoerveld telefoonnummer">
+            <!-- Email -->
+            <label for="email" tabindex="34">Email</label>
+            <input type="email" name="email" id="email" maxlength="50" required aria-required="true" aria-roledescription="Input veld" tabindex="35" placeholder="Invoerveld email" aria-placeholder="Invoerveld email">
+
+        <!-- Reservatie -->
+            <h2 class="formHeader" tabindex="36">Benodigde gegevens reservatie</h2>
+            <!-- Volwassenen -->
+            <label for="adults" tabindex="37">Volwassenen</label>
+            <input type="number" name="adults" id="adults" min="1" maxlength="3" required aria-required="true" aria-roledescription="Input veld" tabindex="38" placeholder="Invoerveld aantal volwassenen" aria-placeholder="Invoerveld aantal volwassenen">
+            <!-- Kinderen -->
+            <label for="children" tabindex="39">Kinderen</label>
+            <input type="number" name="children" id="children" min="0" max="3" required aria-required="true" aria-roledescription="Input veld" tabindex="40" placeholder="Invoerveld aantal kinderen" aria-placeholder="Invoerveld aantal kinderen">
+            <!-- Huisdieren -->
+            <label for="pets" tabindex="41">Aantal huisdieren</label>
+            <input type="number" name="pets" id="pets" min="0" max="3" required aria-required="true" aria-roledescription="Input veld" tabindex="42" placeholder="Invoerveld aantal huisdieren" aria-placeholder="Invoerveld aantal huisdieren">
+            <!-- Auto's -->
+            <label for="cars" tabindex="43">Aantal auto's</label>
+            <input type="number" name="cars" id="cars" min="0" maxlength="3" required aria-required="true" aria-roledescription="Input veld" tabindex="44" placeholder="Invoerveld aantal auto's" aria-placeholder="Invoerveld aantal auto's">
+            <!-- Kenteken -->
+            <label for="licenseplate" tabindex="45">Kenteken</label>
+            <input type="text" name="licenseplate" id="licenseplate" maxlength="10" required aria-required="true" aria-roledescription="Input veld" tabindex="46" placeholder="Invoerveld kenteken van de auto's" aria-placeholder="Invoerveld kenteken van de auto's">
+
+        <!-- Data -->
+            <!-- Aankomstdatum -->
+            <label for="arrival_date" tabindex="47">Aankomstdatum</label>
+            <input type="date" name="arrival_date" id="arrival_date" max="10" required aria-required="true" aria-roledescription="Input veld" tabindex="48" aria-placeholder="Invoerveld aankomstdatum">
+            <!-- Vertrekdatum -->
+            <label for="departure_date" tabindex="49">Vertrekdatum</label>
+            <input type="date" name="departure_date" id="departure_date" maxlength="10" required aria-required="true" aria-roledescription="Input veld" tabindex="50" aria-placeholder="Invoerveld vertrekdatum">
+
+        <!-- Preferenties -->
+            <!-- Grootte van de kampeerplaats -->
+             <div class="select--container" tabindex="51">
+                <label class="select--label" for="campsite_size" tabindex="52">Grootte van de kampeerplaats in vierkante meters</label>
+                <select class="select--input" name="campsite_size" id="campsite_size" required aria-required="true" aria-roledescription="Input selectie" tabindex="53" aria-placeholder="Selecteer grootte van de kampeerplaats in vierkante meters">
+                    <option value="" disabled selected>Selecteer grootte</option>
+                    <option value=">50">minder dan 50 m²</option>
+                    <option value="50">50 m²</option>
+                    <option value="100">100 m²</option>
+                    <option value="150">150 m²</option>
+                    <option value="200">200 m²</option>
+                    <option value=">200">meer dan 200 m²</option>
+                </select>
+             </div>
+            
+            <!-- Elektriciteit -->
+            <div class="select--container" tabindex="54">
+                <label class="select--label"  for="electricity" tabindex="55">Elektriciteitsaansluiting</label>
+                <select class="select--input" name="electricity" id="electricity" required aria-required="true" aria-roledescription="Input selectie" tabindex="56" aria-placeholder="Selecteer of elektriciteitsaansluiting gewenst is">
+                    <option value="" disabled selected>Selecteer optie</option>
+                    <option value="yes">Ja</option>
+                    <option value="no">Nee</option>
+                </select>
+            </div>
+           
+
+            <!-- Stromend water -->
+             <div class="select--container" tabindex="57">
+                <label class="select--label"  for="running_water" tabindex="58">Stromend water</label>
+                <select class="select--input" name="running_water" id="running_water" required aria-required="true" aria-roledescription="Input selectie" tabindex="59" aria-placeholder="Selecteer of stromend water gewenst is">
+                    <option value="" disabled selected>Selecteer optie</option>
+                    <option value="yes">Ja</option>
+                    <option value="no">Nee</option>
+                </select>                
+             </div>
+            
+
+            <!-- Faciliteiten interesse -->
+            <h2 class="formHeader" tabindex="60">Faciliteiten interesse</h2>
+            <!-- Pool -->
+            <div class="checkbox--container" tabindex="61">
+                <input class="checkbox--input" type="checkbox" id="facility_pool" name="facility_pool" tabindex="62" aria-required="false" aria-roledescription="Input checkbox">
+                <label class="checkbox--label" for="facility_pool" tabindex="63" aria-roledescription="checkbox description">Zwembad</label>
+            </div>
+
+
+            <!-- BBQ -->
+            <div class="checkbox--container" tabindex="64">
+                <input class="checkbox--input" type="checkbox" id="facility_barbeque" name="facility_barbeque" tabindex="65" aria-required="false" aria-roledescription="Input checkbox">
+                <label class="checkbox--label" for="facility_barbeque" tabindex="67" aria-roledescription="checkbox description">Barbeque</label>
+            </div>
+
+            <!-- Bikes -->
+            <div class="checkbox--container" tabindex="68">
+                <input class="checkbox--input" type="checkbox" id="facility_bike" name="facility_bike" tabindex="69" aria-required="false" aria-roledescription="Input checkbox">
+                <label class="checkbox--label" for="facility_bike" tabindex="70" aria-roledescription="checkbox description">Fietsen</label>
+            </div>
+
+            <!-- Laundry -->
+            <div class="checkbox--container" tabindex="71">
+                <input class="checkbox--input" type="checkbox" id="facility_laundry" name="facility_laundry" tabindex="72" aria-required="false" aria-roledescription="Input checkbox">
+                <label class="checkbox--label" for="facility_laundry" tabindex="73" aria-roledescription="checkbox description">Wasserette</label>
+            </div>
+
+            <!-- SHopping -->
+            <div class="checkbox--container" tabindex="74">
+                <input class="checkbox--input" type="checkbox" id="facility_shopping" name="facility_shopping" tabindex="75" aria-required="false" aria-roledescription="Input checkbox">
+                <label class="checkbox--label" for="facility_shopping" tabindex="76" aria-roledescription="checkbox description">Winkelen</label>
+            </div>
+
+            <!-- Playground -->
+            <div class="checkbox--container" tabindex="77">
+                <input class="checkbox--input" type="checkbox" id="facility_playground" name="facility_playground" tabindex="78" aria-required="false" aria-roledescription="Input checkbox" >
+                <label class="checkbox--label" for="facility_playground" tabindex="79" aria-roledescription="checkbox description">Speeltuin</label>
+            </div>
+
+            <!-- Tennis -->
+            <div class="checkbox--container" tabindex="80">
+                <input class="checkbox--input" type="checkbox" id="facility_tennis" name="facility_tennis" tabindex="81" aria-required="false" aria-roledescription="Input checkbox">
+                <label class="checkbox--label" for="facility_tennis" tabindex="82" aria-roledescription="checkbox description">Tennisbaan</label>
+            </div>
+
+            <!-- Restaurant -->
+            <div class="checkbox--container" tabindex="83">
+                <input class="checkbox--input" type="checkbox" id="facility_restaurant" name="facility_restaurant" tabindex="84" aria-required="false" aria-roledescription="Input checkbox">
+                <label class="checkbox--label" for="facility_restaurant" tabindex="85" aria-roledescription="checkbox description">Restaurant</label>
+            </div>
+
+            <!-- Gyms -->
+            <div class="checkbox--container" tabindex="86">
+                <input class="checkbox--input" type="checkbox" id="facility_gym" name="facility_gym" tabindex="87" aria-required="false" aria-roledescription="Input checkbox">
+                <label class="checkbox--label" for="facility_gym" tabindex="88" aria-roledescription="checkbox description">Fitnessruimte</label>
+            </div> -->
