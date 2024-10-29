@@ -33,12 +33,7 @@
     
     <main aria-label="Main" tabindex="11">
         <h1 tabindex="12">Reservering</h1>
-        <form action="" method="post" aria-label="Reserveringsformulier" id="resForm">
-            <!-- alert box -->
-            <div id="alertBox" class="alert-box" role="alert" aria-live="assertive" tabindex="1 " style="display: none;">
-                <p tabindex="" id="alertMessage"></p>
-                <button id="closeAlert" onclick="document.getElementById('alertBox').style.display='none'" aria-label="Close alert" tabindex="3">Melding sluiten</button>
-            </div>
+        <form action="/index.html" method="post" aria-label="Reserveringsformulier" id="resForm">
             <!-- Persoonsgegevens -->
             <h2 class="formHeader" tabindex="13">Persoonsgegevens</h2>
             <!-- voornaam -->
@@ -218,7 +213,6 @@
                 id="email"          
                 name="email"                
                 required        
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 aria-roledescription="Input veld"                   
                 aria-required="true"
                 placeholder="Invoerveld email"                
@@ -307,12 +301,11 @@
                 tabindex="46"       
                 class="input"   
                 type="text"     
-                maxlength="10"  
+                maxlength="100"  
                 minlength="6"
                 id="kentekens"      
                 name="kentekens"                
                 required        
-                pattern="[A-Za-z0-9-]{1,6}"
                 aria-roledescription="Input veld"                   
                 aria-required="true"
                 placeholder="Invoerveld kentekens, gescheiden door een komma"                
@@ -330,7 +323,7 @@
                 minlength="10"
                 id="aankomstDatum"  
                 name="aankomstDatum"              
-                required        
+                required    
                 pattern="\d{2}-\d{2}-\d{4}"
                 aria-roledescription="Input veld"                   
                 aria-required="true"
@@ -633,24 +626,24 @@
                     </label>
                 </div>
 
-                <!-- wasserette -->
+                <!-- minigolf -->
                 <div tabindex="92" class="checkbox--container">
                     <input 
                         tabindex="93"
                         class="checkbox--input" 
                         type="checkbox" 
-                        id="faciliteit_wasserette" 
-                        name="faciliteit_wasserette" 
+                        id="faciliteit_minigolf" 
+                        name="faciliteit_minigolf" 
                         aria-required="false" 
                         aria-roledescription="Input checkbox"
                     >
                     <label 
                         tabindex="94" 
                         class="checkbox--label" 
-                        for="faciliteit_wasserette"  
+                        for="faciliteit_minigolf"  
                         aria-roledescription="checkbox description"
                     >
-                        Wasserette
+                        Minigolf
                     </label>
                 </div>
 
