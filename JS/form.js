@@ -1,13 +1,3 @@
-// Fetch input fields via DOM
-// document.addEventListener('DOMContentLoaded', () => {
-//     const inputFields = document.querySelectorAll('input');
-//     inputFields.forEach(input => {
-//         if (input.value.trim() === '') {
-//             console.log(`Input field with name: ${input.name} is empty.`);
-//         }
-//     });
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
     const inputFields = document.querySelectorAll('input[required]');
     inputFields.forEach(input => {
@@ -173,9 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function showFormData(formData) {
-    console.log('Exporting form data:', formData);
-    // const data = JSON.stringify(formData);
-    // console.log(data);    
+    console.log('Exporting form data:', formData);   
 }
 
 function onsubmit() {
