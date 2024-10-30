@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamping La Mirande</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- <script src="./JS/main.js"></script> -->
+    <script src="./JS/form.js"></script>
+
+    <!-- Imports -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+</head>
+<body aria-label="Body" tabindex="0">
+    <nav role="menu" aria-label="Main Navigation">
+        <ul>
+            <li role="menuitem"><a href="/" tabindex="1">Home</a></li>
+            <li role="menuitem"><a href="./accomodaties.html" tabindex="2">Accomodaties</a></li>
+            <li role="menuitem"><a href="./beschikbaarheid.html" tabindex="3">Beschikbaarheid</a></li>
+            <li role="menuitem"><a href="./omgeving.html" tabindex="4">Omgeving</a></li>
+            <li role="menuitem"><a href="./contact.html" tabindex="5">Contact</a></li>
+            <li role="menuitem"><a href="./faq.html" tabindex="6">FAQ/Vragen</a></li>
+            <li role="menuitem"><a href="./info.html" tabindex="7">Info</a></li>            
+        </ul>
+    </nav>
+
+    <header aria-label="Titel" tabindex="8">
+        <h1 tabindex="9" class="merriweather-sans">glamping La Marinde, </h1>
+        <h2 tabindex="10" class="merriweather-sans"> een droomplek in zuid Frankrijk</h2>
+    </header>
+    
+    <main aria-label="Main" tabindex="11">
+        <h1 tabindex="12">Reservering</h1>
+        <form action="/index.html" method="post" aria-label="Reserveringsformulier" id="resForm">
+            <!-- Persoonsgegevens -->
+            <h2 class="formHeader" tabindex="13">Persoonsgegevens</h2>
+            <!-- voornaam -->
+            <label tabindex="14" for="voornaam">Voornaam</label>
+            <input  tabindex="15"   
+                    class="input"   
+                    type="text"     
+                    maxlength="40"  
+                    minlength="3" 
+                    id="voornaam"   
+                    name="voornaam"                 
+                    required        
+                    pattern="[A-Za-z]+" 
+                    aria-roledescription="Input veld"               
+                    aria-required="true"  
+                    placeholder="Invoerveld voornaam"  
+                    aria-placeholder="Invoerveld voornaam" 
+            >
+
+            <!-- Tussenvoegsel -->
+            <label tabindex="16" for="tussenvoegsel">Tussenvoegsel</label>
+            <input  
+                tabindex="17"       
+                class="input"   
+                type="text"     
+                maxlength="10" 
+                minlength="0" 
+                id="tussenvoegsel"  
+                name="tussenvoegsel"                            
+                pattern="[A-Za-z]+"
+                aria-roledescription="Input veld"                                   
+                aria-required="false"  
+                placeholder="Invoerveld tussenvoegsel"                              
+                aria-placeholder="Invoerveld tussenvoegsel"
+            >
+
+            <!-- Achternaam -->
+            <label tabindex="18" for="achternaam" >Achternaam</label>
+            <input  
+                tabindex="19"       
+                class="input"   
+                type="text"     
+                maxlength="40"  
+                minlength="3"
+                id="achternaam"     
+                name="achternaam"   	        
+                required        
+                pattern="[A-Za-z]+"
+                aria-roledescription="Input veld"                   
+                aria-required="true"  
+                placeholder="Invoerveld achternaam"                
+                aria-placeholder="Invoerveld achternaam"
+            >
+            
+            <!-- Geslacht -->
+            <label for="geslacht" tabindex="20">Geslacht</label>
+            <input  
+                tabindex="21"       
+                class="input"   
+                type="text"     
+                maxlength="10"  
+                minlength="3"
+                id="geslacht"       
+                name="geslacht"                
+                required        
+                pattern="[A-Za-z]+"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld geslacht"                   
+                aria-placeholder="Invoerveld geslacht"
+            >
+
+        <!-- ADRESS GEGEVENS -->
+            <h2 class="formHeader" tabindex="22">Adresgegevens</h2>
+
+            <!-- Straatnaam -->
+            <label for="straatnaam" tabindex="23">Straatnaam</label>
+            <input  
+                tabindex="24"       
+                class="input"   
+                type="text"     
+                maxlength="40"  
+                minlength="3"
+                id="straatnaam"     
+                name="straatnaam"                
+                required        
+                pattern="[A-Za-z]+"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld straatnaam"                
+                aria-placeholder="Invoerveld straatnaam"
+            >
+
+            <!-- Huisnummer -->
+            <label for="huisnummer" tabindex="25">Huisnummer</label>
+            <input  
+                tabindex="26"       
+                class="input"   
+                type="text"     
+                maxlength="10"  
+                minlength="1"
+                id="huisnummer"     
+                name="huisnummer"                
+                required        
+                pattern="[0-9]+"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld huisnummer"                
+                aria-placeholder="Invoerveld huisnummer"
+            >
+
+            <!-- Postcode -->
+            <label for="postcode" tabindex="27">Postcode</label>
+            <input  
+                tabindex="28"       
+                class="input"   
+                type="text"     
+                maxlength="6"   
+                minlength="6"
+                id="postcode"       
+                name="postcode"                
+                required        
+                pattern="[0-9]{4}[A-Z]{2}"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld postcode"                
+                aria-placeholder="Invoerveld postcode"
+            >
+
+            <!-- Woonplaats -->
+            <label for="woonplaats" tabindex="29">Woonplaats</label>
+            <input  
+                tabindex="30"       
+                class="input"   
+                type="text"     
+                maxlength="40"  
+                minlength="3"
+                id="woonplaats"     
+                name="woonplaats"                
+                required        
+                pattern="[A-Za-z]+"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld woonplaats"                
+                aria-placeholder="Invoerveld woonplaats"
+            >
+
+        <!-- Contactgegevens -->
+            <h2 class="formHeader" tabindex="31">Contactgegevens</h2>
+
+            <!-- telefoon -->
+            <label for="telefoon" tabindex="32">Mobiel telefoonnummer</label>
+            <input  
+                tabindex="33"       
+                class="input"   
+                type="tel"     
+                maxlength="10"  
+                minlength="10"
+                id="telefoon"       
+                name="telefoon"                
+                required        
+                pattern="^(\+31|0)[1-9]\d{8}$"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld mobieltelefoonnummer"                
+                aria-placeholder="Invoerveld mobieltelefoonnummer"
+            >
+
+            <!-- email -->
+            <label for="email" tabindex="34">Email</label>
+            <input  
+                tabindex="35"       
+                class="input"   
+                type="email"   
+                maxlength="40"  
+                minlength="3"
+                id="email"          
+                name="email"                
+                required        
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld email"                
+                aria-placeholder="Invoerveld email"
+            >
+
+
+        <!-- Reserveringsgegevens -->            
+            <h2 class="formHeader" tabindex="36">Benodigde gegevens reservatie</h2>
+
+            <!-- Volwassenen -->
+            <label for="volwassenen" tabindex="37">Aantal volwassenen</label>
+            <input  
+                tabindex="38"       
+                class="input"   
+                type="number"   
+                maxlength="2"   
+                minlength="1"
+                id="volwassenen"    
+                name="volwassenen"              
+                required        
+                pattern="[0-9]{1,2}"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld aantal volwassenen"                
+                aria-placeholder="Invoerveld aantal volwassenen"
+            >
+
+            <!-- Kinderen -->
+            <label for="kinderen" tabindex="39">Aantal kinderen</label>
+            <input  
+                tabindex="40"       
+                class="input"   
+                type="number"   
+                maxlength="2"   
+                minlength="1"
+                id="kinderen"       
+                name="kinderen"                
+                required        
+                pattern="[0-9]{1,2}"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld aantal kinderen"                
+                aria-placeholder="Invoerveld aantal kinderen"
+            >
+
+            <!-- Huisdieren -->
+            <label for="huisdieren" tabindex="41">Aantal huisdieren</label>
+            <input  
+                tabindex="42"       
+                class="input"   
+                type="number"   
+                maxlength="2"   
+                minlength="1"
+                id="huisdieren"     
+                name="huisdieren"                
+                required        
+                pattern="[0-9]{1,2}"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld aantal huisdieren"                
+                aria-placeholder="Invoerveld aantal huisdieren"
+            >
+
+            <!-- Aantal voertuigen -->
+            <label for="voertuigenAantal" tabindex="43">Aantal voertuigen</label>
+            <input  
+                tabindex="44"       
+                class="input"   
+                type="number"   
+                maxlength="2"   
+                minlength="1"
+                id="voertuigenAantal" 
+                name="voertuigenAantal"              
+                required        
+                pattern="[0-9]+"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld aantal voertuigen"                
+                aria-placeholder="Invoerveld aantal voertuigen"
+            >
+
+            <!-- Kentekens -->
+            <label for="kentekens" tabindex="45">Kentekens</label>
+            <input  
+                tabindex="46"       
+                class="input"   
+                type="text"     
+                maxlength="100"  
+                minlength="6"
+                id="kentekens"      
+                name="kentekens"                
+                required        
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld kentekens, gescheiden door een komma"                
+                aria-placeholder="Invoerveld kentekens, gescheiden door een komma"
+                multiple
+            >
+            
+            <!-- aankomst -->
+            <label for="aankomstDatum" tabindex="47">Aankomstdatum</label>
+            <input  
+                tabindex="48"       
+                class="input"   
+                type="date"     
+                maxlength="10"  
+                minlength="10"
+                id="aankomstDatum"  
+                name="aankomstDatum"              
+                required    
+                pattern="\d{2}-\d{2}-\d{4}"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld aankomstdatum"                
+                aria-placeholder="Invoerveld aankomstdatum"
+            >
+            <!-- vertrek -->
+            <label for="vertrekDatum" tabindex="49">Vertrekdatum</label>
+            <input  
+                tabindex="50"       
+                class="input"   
+                type="date"     
+                maxlength="10"  
+                minlength="10"
+                id="vertrekDatum"   
+                name="vertrekDatum"               
+                required        
+                pattern="\d{2}-\d{2}-\d{4}"
+                aria-roledescription="Input veld"                   
+                aria-required="true"
+                placeholder="Invoerveld vertrekdatum"                
+                aria-placeholder="Invoerveld vertrekdatum"
+            >
+
+             <!-- Preferenties -->
+            <!-- Grootte van de kampeerplaats -->
+            <div class="select--container" tabindex="51">
+                <label tabindex="52" class="select--label" for="kampeerplaatsGrote" >Grootte van de kampeerplaats in vierkante meters</label>
+                <select 
+                        tabindex="53"
+                        class="select--input" 
+                        name="kampeerplaatsGrote" 
+                        id="kampeerplaatsGrote" 
+                        required 
+                        aria-required="true" 
+                        aria-roledescription="Input selectie"  
+                        aria-placeholder="Selecteer grootte van de kampeerplaats in vierkante meters"
+                    >
+                    <option value="" disabled selected>Selecteer grootte</option>
+                    <option value=">50">minder dan 50 m²</option>
+                    <option value="50">50 m²</option>
+                    <option value="100">100 m²</option>
+                    <option value="150">150 m²</option>
+                    <option value="200">200 m²</option>
+                    <option value=">200">meer dan 200 m²</option>
+                </select>
+             </div>
+            
+            <!-- Elektriciteit -->
+            <div tabindex="54" class="select--container" >
+                <label tabindex="55" class="select--label"  for="elektriciteit" >Elektriciteitsaansluiting</label>
+                <select 
+                        tabindex="56"
+                        class="select--input" 
+                        name="elektriciteit" 
+                        id="elektriciteit" 
+                        required 
+                        aria-required="true" 
+                        aria-roledescription="Input selectie"  
+                        aria-placeholder="Selecteer of elektriciteitsaansluiting gewenst is"
+                    >
+                    <option value="" disabled selected>Selecteer optie</option>
+                    <option value="ja">Ja</option>
+                    <option value="nee">Nee</option>
+                </select>
+            </div>
+           
+
+            <!-- Stromend water -->
+             <div class="select--container" tabindex="57">
+                <label tabindex="58" class="select--label"  for="stromendWater" >Stromend water</label>
+                <select 
+                        tabindex="59" 
+                        class="select--input" 
+                        name="stromendWater" 
+                        id="stromendWater" 
+                        required 
+                        aria-required="true" 
+                        aria-roledescription="Input selectie" 
+                        aria-placeholder="Selecteer of stromend water gewenst is"
+                    >
+                    <option value="" disabled selected>Selecteer optie</option>
+                    <option value="ja">Ja</option>
+                    <option value="nee">Nee</option>
+                </select>                
+             </div>
+            
+
+            <!-- Faciliteiten interesse -->
+            <h2 tabindex="60" class="formHeader" >Faciliteiten interesse</h2>
+            <section class="faciliteiten--container">
+                <!-- Pool -->
+                <div tabindex="61" class="checkbox--container" >
+                    <input 
+                        tabindex="62"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_zwembad" 
+                        name="faciliteit_zwembad" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="63" 
+                        class="checkbox--label" 
+                        for="faciliteit_zwembad"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Zwembad
+                    </label>
+                </div>
+
+
+                <!-- BBQ -->
+                <div  tabindex="64" class="checkbox--container">
+                    <input 
+                        tabindex="65"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_barbeque" 
+                        name="faciliteit_barbeque"
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="67"   
+                        class="checkbox--label" 
+                        for="faciliteit_barbeque"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Barbeque
+                    </label>
+                </div>
+
+                <!-- Speeltuin -->
+                <div tabindex="68" class="checkbox--container">
+                    <input 
+                        tabindex="69"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_speeltuin" 
+                        name="faciliteit_speeltuin" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="70" 
+                        class="checkbox--label" 
+                        for="faciliteit_speeltuin"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Speeltuin
+                    </label>
+                </div>
+
+                <!-- Wifi -->
+                <div tabindex="71" class="checkbox--container">
+                    <input 
+                        tabindex="72"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_wifi" 
+                        name="faciliteit_wifi" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="73" 
+                        class="checkbox--label" 
+                        for="faciliteit_wifi"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Wifi
+                    </label>
+                </div>
+
+                <!-- Restaurant -->
+                <div tabindex="74" class="checkbox--container">
+                    <input 
+                        tabindex="75"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_restaurant" 
+                        name="faciliteit_restaurant" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="76" 
+                        class="checkbox--label" 
+                        for="faciliteit_restaurant"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Restaurant
+                    </label>
+                </div>
+
+                <!-- fietsen  -->
+                <div tabindex="77" class="checkbox--container">
+                    <input 
+                        tabindex="78"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_fietsen" 
+                        name="faciliteit_fietsen" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="79" 
+                        class="checkbox--label" 
+                        for="faciliteit_fietsen"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Fietsen
+                    </label>
+                </div>
+
+                <!-- Wasserette -->
+                <div tabindex="80" class="checkbox--container">
+                    <input 
+                        tabindex="81"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_wasserette" 
+                        name="faciliteit_wasserette" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="82" 
+                        class="checkbox--label" 
+                        for="faciliteit_wasserette"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Wasserette
+                    </label>
+                </div>
+
+                <!-- Tennisbaan -->
+                <div tabindex="86" class="checkbox--container">
+                    <input 
+                        tabindex="87"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_tennisbaan" 
+                        name="faciliteit_tennisbaan" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="88" 
+                        class="checkbox--label" 
+                        for="faciliteit_tennisbaan"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Tennisbaan
+                    </label>
+                </div>
+
+                <!-- Fitness -->
+                <div tabindex="89" class="checkbox--container">
+                    <input 
+                        tabindex="90"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_fitness" 
+                        name="faciliteit_fitness" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="91" 
+                        class="checkbox--label" 
+                        for="faciliteit_fitness"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Fitness
+                    </label>
+                </div>
+
+                <!-- minigolf -->
+                <div tabindex="92" class="checkbox--container">
+                    <input 
+                        tabindex="93"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_minigolf" 
+                        name="faciliteit_minigolf" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="94" 
+                        class="checkbox--label" 
+                        for="faciliteit_minigolf"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Minigolf
+                    </label>
+                </div>
+
+                <!-- Winkelen -->
+                <div tabindex="95" class="checkbox--container">
+                    <input 
+                        tabindex="96"
+                        class="checkbox--input" 
+                        type="checkbox" 
+                        id="faciliteit_winkelen" 
+                        name="faciliteit_winkelen" 
+                        aria-required="false" 
+                        aria-roledescription="Input checkbox"
+                    >
+                    <label 
+                        tabindex="97" 
+                        class="checkbox--label" 
+                        for="faciliteit_winkelen"  
+                        aria-roledescription="checkbox description"
+                    >
+                        Winkelen
+                    </label>
+                </div>
+            </section>
+
+            <!-- Sumit form -->
+            <button 
+                    tabindex="98"
+                    id="submitBttn" 
+                    role="button" 
+                    class="button--submit" 
+                    aria-placeholder="Verstuur formulier" 
+            >
+                Verstuur
+            </button>
+        </form>
+    </main>
+    <footer aria-label="Footer" tabindex="99">
+        <p tabindex="100">2024 IMTUE Project by Zoë van Dijk, studentnumber 1107714</p>
+    </footer>
+</html>
